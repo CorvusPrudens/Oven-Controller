@@ -7,8 +7,8 @@ byte minuteTick = 0;
 #define JUST_MINUTE 2
 
 #include <SPI.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1325.h>
+#include "Adafruit_GFX.h"
+#include "Adafruit_SSD1325.h"
 
 #include "utility.h"
 #include "pt100.h"
