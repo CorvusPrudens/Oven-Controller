@@ -17,7 +17,7 @@
 ## Firmware
 <img align="left" src="/images/controller_ui.jpg">
  The firmware provides an intuitive, menu-based UI for the user. Without any programming or reflashing, the user can define up to eight temperature profiles that persist even after power cycling. These profiles can then be called up to control a modified toaster oven via a solid state relay.
- <!-- ![Oven Controller](/images/controller_ui.jpg) -->
+  
 
  The firmware provides out of the box support for a piezo buzzer on the available gpio terminal, which provides feedback for UI navigation and an open-door notification.
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
