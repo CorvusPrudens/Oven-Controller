@@ -23,6 +23,9 @@
  \
  \
  \
-
-## Software
+ \
+ \
+ \
+ \
+ \ ## Software
  I have also written a few support programs with Processing and Python. They perform various functions, including generating timer settings for different clock frequencies, generating playable note sequences given a semi-intuitive note table entry, generating bitmaps from images (ideally monochromatic or dichromatic images), and a program that allows a connected computer to log and display the live temperature profile as recorded by the controller.
