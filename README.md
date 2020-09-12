@@ -1,5 +1,5 @@
 # Oven-Controller
- Software and Firmware for a custom-made ATMEGA 328-P based reflow oven controller
+ Software and Firmware for an ATMEGA 328-P based reflow oven controller
 ![Oven Controller](/images/controller_oven.jpg)
 
 ## Hardware
