@@ -40,9 +40,10 @@ void tick() {
 volatile byte newFrame = 0;
 
 void setup() {
-  pinMode(5, OUTPUT);
+  
   // TXB0108 level shifter enable
   // We'll just leave this high for now
+  pinMode(5, OUTPUT);
   digitalWrite(5, HIGH);
 
   // MAX chip select
@@ -73,8 +74,8 @@ void setup() {
   pinMode(2, OUTPUT);
   setTimer2();
   setTimer0();
-//  beginSequence(mario);
-//  disableAudio();
+  // beginSequence(mariovict);
+  // disableAudio();
 
   //  // DEBUG MODE
   //  for (byte i = 0; i < PROFILES_HEADER; i++){

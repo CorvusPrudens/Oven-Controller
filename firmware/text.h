@@ -8,14 +8,6 @@ typedef struct {
   byte height;
 } Font;
 
-// It's much easier to unify everything under the sprite struct
-// and it's only one more byte
-//typedef struct {
-//  const byte* bm PROGMEM;
-//  byte width;
-//  byte height;
-//} Bitmap;
-
 typedef struct {
   const byte* bm PROGMEM;
   byte width;
@@ -23,7 +15,6 @@ typedef struct {
   byte frames;
 } Sprite;
 
-//byte* b;
 Font currentFont;
 byte textSize = 1;
 byte textColor = 1;
@@ -160,11 +151,7 @@ void setTextColor(byte c) {
 }
 
 void printChar(byte ch, byte x, byte y) {
-  //  x &= 127;
-  //  y &= 63;
-  //  if (y + currentFont.height > 63) {
-  //    y = 63 - currentFont.height;
-  //  }
+
   int16_t index = x + (y / 8) * 128;
   // Speedy way
   // Tells us whether the text will run across one byte of vram or two
@@ -236,7 +223,6 @@ void printString(byte* st, byte x, byte y) {
     character++;
   }
 }
-
 
 void printStringConst(const byte* st, byte x, byte y) {
   byte pos = 0;
@@ -319,7 +305,7 @@ void printFloat(float val, byte x, byte y) {
       pos += (currentFont.width + 1);
     }
   } else if (val < 0) {
-    
+
     uint16_t quotient = abs(val) * 100;
     byte place = 0;
 
