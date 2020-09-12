@@ -4,7 +4,7 @@
 ![Oven Controller](/images/controller_oven.jpg)
 
 ## Hardware
-<img align="right" src="/images/controller_naked.png">
+<img align="right" src="/images/controller_naked.jpg">
  The board is controlled by an ATMEGA328-P microcontroller running at 20 MHz. USB communication and flashing is handled with an FT232R USB to UART IC. The board uses a USB-C connector because every modern device should.
  <!-- ![Oven Controller](/images/controller_naked.jpg) -->
 
@@ -15,7 +15,7 @@
  The board was designed in kiCad, but can be easily ported to Eagle.
 
 ## Firmware
-<img align="left" src="/images/controller_ui.png">
+<img align="left" src="/images/controller_ui.jpg">
  The firmware provides an intuitive, menu-based UI for the user. Without any programming or reflashing, the user can define up to eight temperature profiles that persist even after power cycling. These profiles can then be called up to control a modified toaster oven via a solid state relay.
  <!-- ![Oven Controller](/images/controller_ui.jpg) -->
 
