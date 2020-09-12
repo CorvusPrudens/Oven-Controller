@@ -1,6 +1,7 @@
 # Hardware
 
-![kiCad Design](../images/controller_design.png)
+<!-- ![kiCad Design](../images/controller_design.png) -->
+<img align="right" src="../images/controller_design.png">
  This board combines several convenient features together to make an easy to use and highly capable reflow (toaster) oven controller. At the heart of the design is an ATMEGA328-P, with a few support features similar to what you might find on an Arduino board. This allows easy integration with the large Arduino ecosystem and convenient communication and flashing via USB (after flashing a bootloader via the ICSP header). To maximize performance, the 328-P is run at 5 volts -- supplied by either the USB Vbus or the included 7-12 volts LDO regulator. This allows the microcontroller to run at its highest rated frequency, 20 MHz, which is just enough to run all the UI screens at 30 frames per second.
 
  While the microcontroller can accept 5 volts, the two SPI connected modules -- the MAX31865 PTD probe sensor IC and the OLED display -- need 3.3 volts. Their power is supplied through another LDO, and the communication is routed through a very convenient level shifter, the TXB0108.
