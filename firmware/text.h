@@ -23,7 +23,7 @@ typedef struct {
   byte frames;
 } Sprite;
 
-byte* b;
+//byte* b;
 Font currentFont;
 byte textSize = 1;
 byte textColor = 1;
