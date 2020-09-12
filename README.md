@@ -1,5 +1,6 @@
 # Oven-Controller
- Hardware Firmware, and support software for an ATMEGA 328-P based reflow oven controller
+ Hardware Firmware, and support software for an ATMEGA 328-P based reflow oven controller.
+
 ![Oven Controller](/images/controller_oven.jpg)
 
 ## Hardware
@@ -14,9 +15,9 @@
  The board was designed in kiCad, but can be easily ported to Eagle.
 
 ## Firmware
+<img align="right" src="../images/controller_design.png">
  The firmware provides an intuitive, menu-based UI for the user. Without any programming or reflashing, the user can define up to eight temperature profiles that persist even after power cycling. These profiles can then be called up to control a modified toaster oven via a solid state relay.
-
- ![Oven Controller](/images/controller_ui.jpg)
+ <!-- ![Oven Controller](/images/controller_ui.jpg) -->
 
  The firmware provides out of the box support for a piezo buzzer on the available gpio terminal, which provides feedback for UI navigation and an open-door notification.
 

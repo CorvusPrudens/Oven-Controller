@@ -8,4 +8,5 @@
 
  The board itself is a 4 layer design. Of course, 4 layers is completely overkill for this design and would make no sense for a high-volume product. However, this is _not_ a high-volume product, and the manufacturer I use just so happened to drop their 4 layer prices insanely low. I'd be crazy not to make it 4!
 
+
  Finally, I'd like to highlight the use of USB-C. If I ever include USB functionality on a device, I will _always_ choose USB-C if I am able. Not only is it an aesthetically pleasing, reversible, fast, and powerful connection -- it's _dead easy_ to design with assuming you don't need its fancier features like power delivery or USB 3.0 (or the dreadfully named USB 3.1 gen 2!). All that's needed for a basic implementation is two resistors and a convenient USB 2.0 rated connector like the one I've used on this board. Give it a try!
