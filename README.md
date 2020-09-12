@@ -11,6 +11,8 @@
 
  The most prominent feature is, of course, the 128x64 pixel OLED display. The on-screen UI is navigated with the 6 pushbuttons arranged in a gamepad-like fashion.
 
+ The board was designed in kiCad, but can be easily ported to Eagle.
+
 ## Firmware
  The firmware provides an intuitive, menu-based UI for the user. Without any programming or reflashing, the user can define up to eight temperature profiles that persist even after power cycling. These profiles can then be called up to control a modified toaster oven via a solid state relay.
 
