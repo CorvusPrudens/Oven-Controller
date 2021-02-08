@@ -97,9 +97,56 @@ void writeToFile(String path, int w, int h, int gridx) {
     }
     i++;
     if (i == lines.length){
-     done = true; 
+     done = true;
     }
   }
+  saveStrings(path, lines);
+}
+
+void writeToHex(String path, int w, int h, int gridx) {
+  // NEEDS FIXING!
+  int tempval = 0;
+  if (h > 0 && (h & (wordLen - 1)) == 0) {
+    tempval = 1 + ((h - 1)/wordLen);
+  } else {
+    tempval = 1 + h/wordLen;
+  }
+  println("ok here");
+  String lines[] = new String[chars.length*(1 + tempval)];
+  for (int i = 0; i < chars.length; i++) {
+    lines[i*(1 + tempval)] = "// Bitmap " + str(i) + " (" + str(i % gridx) + ", " + str(i/gridx) + ")";
+    for (int k = 0; k < tempval; k++) {
+      String line = "";
+      for (int j = 0; j < w; j++) {
+        //println(idx(j + 1, k, w));
+        line += hex(chars[i][idx(j, k, w)], round(2*(wordLen/8))) + " ";
+      }
+      lines[i*(1 + tempval) + 1 + k] = line;
+    }
+  }
+
+  // int i = 0;
+  // boolean done = false;
+  // while (!done) {
+  //   int index = 0;
+  //   if (lines[i].length() > 82) {
+  //     for (int j = 81; j > -1; j--){
+  //       if (lines[i].charAt(j) == ','){
+  //         index = j;
+  //         break;
+  //       }
+  //     }
+  //     String newShorterLine = lines[i].substring(0, index + 1);
+  //     String newLine = " " + lines[i].substring(index + 1, lines[i].length());
+  //     lines[i] = newShorterLine;
+  //     lines = splice(lines, newLine, i + 1);
+  //   }
+  //   i++;
+  //   if (i == lines.length){
+  //    done = true;
+  //   }
+  // }
+  println("ok here too?");
   saveStrings(path, lines);
 }
 
